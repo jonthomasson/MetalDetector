@@ -1,0 +1,525 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:metalDetectorLib
+LIBS:MetalDetector-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D3
+U 1 1 563FFD3B
+P 7350 2750
+F 0 "D3" H 7350 2850 50  0000 C CNN
+F 1 "LED" H 7350 2650 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 7350 2750 60  0001 C CNN
+F 3 "" H 7350 2750 60  0000 C CNN
+	1    7350 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R11
+U 1 1 563FFD9D
+P 7350 3325
+F 0 "R11" V 7430 3325 50  0000 C CNN
+F 1 "2k" V 7350 3325 50  0000 C CNN
+F 2 "6502Library:Resistor_Vertical_RM2_5mm" V 7280 3325 30  0001 C CNN
+F 3 "" H 7350 3325 30  0000 C CNN
+	1    7350 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C4
+U 1 1 563FFFD6
+P 7025 3100
+F 0 "C4" H 7035 3170 50  0000 L CNN
+F 1 "1000u" H 7035 3020 50  0000 L CNN
+F 2 "6502Library:Elko_vert_11.5x8mm_RM3.5" H 7025 3100 60  0001 C CNN
+F 3 "" H 7025 3100 60  0000 C CNN
+	1    7025 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 5640000E
+P 7750 2700
+F 0 "SW1" H 7900 2810 50  0000 C CNN
+F 1 "SW_PUSH" H 7750 2620 50  0000 C CNN
+F 2 "6502Library:SS_12D07_SWITCH" H 7750 2700 60  0001 C CNN
+F 3 "" H 7750 2700 60  0000 C CNN
+	1    7750 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 56400081
+P 6400 2750
+F 0 "R10" V 6480 2750 50  0000 C CNN
+F 1 "18" V 6400 2750 50  0000 C CNN
+F 2 "6502Library:Resistor_Vertical_RM2_5mm" V 6330 2750 30  0001 C CNN
+F 3 "" H 6400 2750 30  0000 C CNN
+	1    6400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPEAKER SP1
+U 1 1 564000E0
+P 6700 2320
+F 0 "SP1" H 6600 2570 50  0000 C CNN
+F 1 "SPEAKER" H 6600 2070 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 6700 2320 60  0001 C CNN
+F 3 "" H 6700 2320 60  0000 C CNN
+	1    6700 2320
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 5640066E
+P 6000 2950
+F 0 "R9" V 6080 2950 50  0000 C CNN
+F 1 "1k" V 6000 2950 50  0000 C CNN
+F 2 "6502Library:Resistor_Vertical_RM2_5mm" V 5930 2950 30  0001 C CNN
+F 3 "" H 6000 2950 30  0000 C CNN
+	1    6000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 564006FE
+P 5750 2950
+F 0 "R7" V 5830 2950 50  0000 C CNN
+F 1 "1k" V 5750 2950 50  0000 C CNN
+F 2 "6502Library:Resistor_Vertical_RM2_5mm" V 5680 2950 30  0001 C CNN
+F 3 "" H 5750 2950 30  0000 C CNN
+	1    5750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC547 Q3
+U 1 1 56400781
+P 5200 3050
+F 0 "Q3" H 5400 3125 50  0000 L CNN
+F 1 "2N3904" H 5400 3050 50  0000 L CNN
+F 2 "Housings_TO-92:TO-92_Molded_Narrow" H 5400 2975 50  0000 L CIN
+F 3 "" H 5200 3050 50  0000 L CNN
+	1    5200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 564008A0
+P 5300 2550
+F 0 "R6" V 5380 2550 50  0000 C CNN
+F 1 "10k" V 5300 2550 50  0000 C CNN
+F 2 "6502Library:Resistor_Vertical_RM2_5mm" V 5230 2550 30  0001 C CNN
+F 3 "" H 5300 2550 30  0000 C CNN
+	1    5300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC557 Q4
+U 1 1 56400901
+P 5650 2275
+F 0 "Q4" H 5850 2350 50  0000 L CNN
+F 1 "2N4403" H 5850 2275 50  0000 L CNN
+F 2 "Housings_TO-92:TO-92_Molded_Narrow" H 5850 2200 50  0000 L CIN
+F 3 "" H 5650 2275 50  0000 L CNN
+	1    5650 2275
+	1    0    0    1   
+$EndComp
+$Comp
+L R R8
+U 1 1 56400984
+P 5900 3475
+F 0 "R8" V 5980 3475 50  0000 C CNN
+F 1 "10k" V 5900 3475 50  0000 C CNN
+F 2 "6502Library:Resistor_Vertical_RM2_5mm" V 5830 3475 30  0001 C CNN
+F 3 "" H 5900 3475 30  0000 C CNN
+	1    5900 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 56400A56
+P 4950 3650
+F 0 "R5" V 5030 3650 50  0000 C CNN
+F 1 "56k" V 4950 3650 50  0000 C CNN
+F 2 "6502Library:Resistor_Vertical_RM2_5mm" V 4880 3650 30  0001 C CNN
+F 3 "" H 4950 3650 30  0000 C CNN
+	1    4950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 56400AC0
+P 4500 1950
+F 0 "R4" V 4580 1950 50  0000 C CNN
+F 1 "330" V 4500 1950 50  0000 C CNN
+F 2 "6502Library:Resistor_Vertical_RM2_5mm" V 4430 1950 30  0001 C CNN
+F 3 "" H 4500 1950 30  0000 C CNN
+	1    4500 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 56400B41
+P 4450 3050
+F 0 "R3" V 4530 3050 50  0000 C CNN
+F 1 "220k" V 4450 3050 50  0000 C CNN
+F 2 "6502Library:Resistor_Vertical_RM2_5mm" V 4380 3050 30  0001 C CNN
+F 3 "" H 4450 3050 30  0000 C CNN
+	1    4450 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L BC547 Q2
+U 1 1 56400BCD
+P 3600 3300
+F 0 "Q2" H 3800 3375 50  0000 L CNN
+F 1 "2N3904" H 3800 3300 50  0000 L CNN
+F 2 "Housings_TO-92:TO-92_Molded_Narrow" H 3800 3225 50  0000 L CIN
+F 3 "" H 3600 3300 50  0000 L CNN
+	1    3600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC547 Q1
+U 1 1 56400C78
+P 2750 2850
+F 0 "Q1" H 2950 2925 50  0000 L CNN
+F 1 "2N3904" H 2950 2850 50  0000 L CNN
+F 2 "Housings_TO-92:TO-92_Molded_Narrow" H 2950 2775 50  0000 L CIN
+F 3 "" H 2750 2850 50  0000 L CNN
+	1    2750 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56400CE6
+P 3700 2300
+F 0 "R1" V 3780 2300 50  0000 C CNN
+F 1 "270k" V 3700 2300 50  0000 C CNN
+F 2 "6502Library:Resistor_Vertical_RM2_5mm" V 3630 2300 30  0001 C CNN
+F 3 "" H 3700 2300 30  0000 C CNN
+	1    3700 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D2
+U 1 1 56400D99
+P 3700 3700
+F 0 "D2" H 3700 3800 50  0000 C CNN
+F 1 "D" H 3700 3600 50  0000 C CNN
+F 2 "MetalDetectorFootprintLibrary:Diode_P600_Vertical_KathodeUp" H 3700 3700 60  0001 C CNN
+F 3 "" H 3700 3700 60  0000 C CNN
+	1    3700 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C2
+U 1 1 56400E5C
+P 4250 3500
+F 0 "C2" H 4275 3600 50  0000 L CNN
+F 1 "100n" H 4275 3400 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4288 3350 30  0001 C CNN
+F 3 "" H 4250 3500 60  0000 C CNN
+	1    4250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 56400EC6
+P 4625 3500
+F 0 "C3" H 4650 3600 50  0000 L CNN
+F 1 "10n" H 4650 3400 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4663 3350 30  0001 C CNN
+F 3 "" H 4625 3500 60  0000 C CNN
+	1    4625 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D1
+U 1 1 56400F2C
+P 2200 2450
+F 0 "D1" H 2200 2550 50  0000 C CNN
+F 1 "ZENER" H 2200 2350 50  0000 C CNN
+F 2 "MetalDetectorFootprintLibrary:Diode_P600_Vertical_KathodeUp" H 2200 2450 60  0001 C CNN
+F 3 "" H 2200 2450 60  0000 C CNN
+	1    2200 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 5640131B
+P 7750 3350
+F 0 "BT1" H 7850 3400 50  0000 L CNN
+F 1 "9v" H 7850 3300 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" V 7750 3390 60  0001 C CNN
+F 3 "" V 7750 3390 60  0000 C CNN
+	1    7750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC547 Q5
+U 1 1 564031B2
+P 6300 3175
+F 0 "Q5" H 6500 3250 50  0000 L CNN
+F 1 "2N4401" H 6500 3175 50  0000 L CNN
+F 2 "Housings_TO-92:TO-92_Molded_Narrow" H 6500 3100 50  0000 L CIN
+F 3 "" H 6300 3175 50  0000 L CNN
+	1    6300 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 56405D44
+P 5600 3450
+F 0 "C5" H 5625 3550 50  0000 L CNN
+F 1 "10n" H 5625 3350 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 5638 3300 30  0001 C CNN
+F 3 "" H 5600 3450 60  0000 C CNN
+	1    5600 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L L_Small L2
+U 1 1 56409109
+P 3275 3400
+F 0 "L2" H 3305 3440 50  0000 L CNN
+F 1 "Receive Coil" H 3305 3360 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 3275 3400 60  0001 C CNN
+F 3 "" H 3275 3400 60  0000 C CNN
+	1    3275 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 56409949
+P 2650 2325
+F 0 "C1" H 2675 2425 50  0000 L CNN
+F 1 "47n" H 2675 2225 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 2688 2175 30  0001 C CNN
+F 3 "" H 2650 2325 60  0000 C CNN
+	1    2650 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR_SMALL L1
+U 1 1 564099F8
+P 2900 2300
+F 0 "L1" H 2900 2400 50  0000 C CNN
+F 1 "Transmit Coil" H 2900 2250 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 2900 2300 60  0001 C CNN
+F 3 "" H 2900 2300 60  0000 C CNN
+	1    2900 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L POT RV1
+U 1 1 5641441B
+P 2500 3600
+F 0 "RV1" H 2500 3500 50  0000 C CNN
+F 1 "POT" H 2500 3600 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_WirePads_Small" H 2500 3600 60  0001 C CNN
+F 3 "" H 2500 3600 60  0000 C CNN
+	1    2500 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 564217CC
+P 3900 2725
+F 0 "R2" V 3980 2725 50  0000 C CNN
+F 1 "1.8k" V 3900 2725 50  0000 C CNN
+F 2 "6502Library:Resistor_Vertical_RM2_5mm" V 3830 2725 30  0001 C CNN
+F 3 "" H 3900 2725 30  0000 C CNN
+	1    3900 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 56438B5B
+P 2650 3260
+F 0 "R12" V 2730 3260 50  0000 C CNN
+F 1 "390" V 2650 3260 50  0000 C CNN
+F 2 "6502Library:Resistor_Vertical_RM2_5mm" V 2580 3260 30  0001 C CNN
+F 3 "" H 2650 3260 30  0000 C CNN
+	1    2650 3260
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3200 7750 3000
+Wire Wire Line
+	7750 1950 7750 2400
+Wire Wire Line
+	4650 1950 7750 1950
+Wire Wire Line
+	7350 1950 7350 2550
+Wire Wire Line
+	7350 2950 7350 3175
+Wire Wire Line
+	7750 3850 7750 3500
+Wire Wire Line
+	7350 3850 7350 3475
+Wire Wire Line
+	7025 3850 7025 3200
+Connection ~ 7350 3850
+Wire Wire Line
+	7025 3000 7025 1950
+Connection ~ 7350 1950
+Connection ~ 7025 1950
+Wire Wire Line
+	6400 3375 6400 3850
+Connection ~ 7025 3850
+Wire Wire Line
+	6100 3175 6000 3175
+Wire Wire Line
+	6000 3175 6000 3100
+Wire Wire Line
+	5900 3625 5900 3850
+Connection ~ 6400 3850
+Wire Wire Line
+	5750 2800 6000 2800
+Wire Wire Line
+	5900 3325 5900 2800
+Connection ~ 5900 2800
+Wire Wire Line
+	5750 1950 5750 2075
+Connection ~ 6400 1950
+Wire Wire Line
+	5750 2475 5750 2800
+Wire Wire Line
+	5450 2275 5300 2275
+Wire Wire Line
+	5300 2275 5300 2400
+Wire Wire Line
+	5300 2700 5300 2850
+Wire Wire Line
+	5750 3100 5750 3450
+Wire Wire Line
+	5300 3850 5300 3250
+Connection ~ 5900 3850
+Connection ~ 5300 3850
+Wire Wire Line
+	4950 3450 5450 3450
+Wire Wire Line
+	4625 3850 4625 3650
+Connection ~ 4625 3850
+Wire Wire Line
+	4625 3350 4625 3050
+Wire Wire Line
+	4600 3050 5000 3050
+Wire Wire Line
+	2200 3850 7750 3850
+Connection ~ 4625 3050
+Wire Wire Line
+	4950 3850 4950 3800
+Connection ~ 4950 3850
+Wire Wire Line
+	4950 3500 4950 3050
+Connection ~ 4950 3050
+Connection ~ 4950 3450
+Wire Wire Line
+	4250 3350 4250 3050
+Wire Wire Line
+	3700 3050 4300 3050
+Wire Wire Line
+	4250 3650 4250 3850
+Connection ~ 5750 1950
+Connection ~ 4250 3050
+Connection ~ 3700 3050
+Connection ~ 4250 3850
+Wire Wire Line
+	3700 3550 3700 3500
+Wire Wire Line
+	3700 2450 3700 3100
+Wire Wire Line
+	2200 1950 4350 1950
+Wire Wire Line
+	3700 1950 3700 2150
+Wire Wire Line
+	2900 2550 2650 2550
+Connection ~ 2650 2550
+Connection ~ 3700 1950
+Wire Wire Line
+	2900 2050 2650 2050
+Connection ~ 2650 2050
+Wire Wire Line
+	2200 1950 2200 2250
+Connection ~ 2650 1950
+Wire Wire Line
+	2200 2650 2200 3850
+Connection ~ 3275 3300
+Wire Wire Line
+	3275 3300 3400 3300
+Wire Wire Line
+	3275 3300 3275 2850
+Wire Wire Line
+	3275 2850 2950 2850
+Wire Wire Line
+	2650 2475 2650 2650
+Wire Wire Line
+	2650 1950 2650 2175
+Connection ~ 3700 3850
+Connection ~ 2500 3850
+Wire Wire Line
+	3900 2575 3900 1950
+Connection ~ 3900 1950
+Wire Wire Line
+	3275 3500 3275 3525
+Wire Wire Line
+	3275 3525 3900 3525
+Connection ~ 3700 3525
+Wire Wire Line
+	3900 3525 3900 2875
+Wire Wire Line
+	2650 3050 2650 3110
+Wire Wire Line
+	2650 3600 2650 3410
+Wire Wire Line
+	6400 2900 6400 2975
+Wire Wire Line
+	6400 2220 6400 1950
+Wire Wire Line
+	6400 1950 6405 1950
+Wire Wire Line
+	6400 2420 6400 2600
+$EndSCHEMATC
